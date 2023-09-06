@@ -1,0 +1,33 @@
+.navbar{
+    position: absolute;
+    width:100vw;
+    height:2.5rem;
+    background-color: rgb(15, 135, 255);
+    display: flex;
+    align-items: end;
+    justify-content: flex-end;
+    padding:0.5rem;
+    
+}
+.nav-content{
+    position: relative;
+    display: flex;
+    li{
+        list-style: none;
+        a{
+            color:white;
+            text-decoration: none;
+            margin:0.5rem;
+            cursor:pointer;
+            transition: all 0.15s ease-in-out;
+        }
+        a:hover,.active-link{
+            color:rgb(216, 207, 207);
+        }
+    } 
+}
+
+.logo{
+    margin-right:80%;
+    color:white;
+}

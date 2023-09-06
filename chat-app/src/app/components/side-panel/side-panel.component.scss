@@ -1,0 +1,50 @@
+.side-panel{
+    margin:3rem 0.4rem;
+    .contact-list{
+        background-color: white;
+         width:95%;
+         height:83vh;
+         margin-top: 0.5rem;
+         overflow-y:auto;
+         .contacts{
+             background-color: white;
+             padding:0.5rem;
+             display: flex;
+             gap:0.7rem;
+             align-items: center;
+             border-bottom: 1px solid rgb(234, 233, 233);
+         }
+         .contact-name{
+           font-size: 0.8rem;
+         }
+     }
+
+
+  
+}
+:host ::ng-deep .p-inputtext{
+    padding:0.35rem 0.35rem !important
+}
+:host ::ng-deep .p-inputtext:enabled:focus,.p-inputtext:enabled:hover {
+    box-shadow: none !important;
+    border: none;
+}
+:host ::ng-deep.p-autocomplete-panel .p-autocomplete-items .p-autocomplete-item{
+    padding:0.25rem 1.25rem !important
+}
+/* Add this to your component's CSS file */
+.matched-text {
+    font-weight: bold;
+  }
+
+  ::-webkit-scrollbar {
+    width: 2px;
+  }
+  ::-webkit-scrollbar-track {
+    background: rgb(80, 174, 245);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: rgb(0, 128, 255);
+  }
+ 

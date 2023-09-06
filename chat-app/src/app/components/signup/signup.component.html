@@ -1,0 +1,38 @@
+<div class="body">
+    <div class="main-div">
+
+        <div class="form-div">
+            <form [formGroup]="signUpForm">
+                <div class="image-div">
+                    <img src="assets/loginPageImage.svg">
+                </div>
+                <div class="signUpForm">
+                    <h4>Sign Up Form</h4>
+                    <span class="p-float-label">
+                        <input pInputText id="username" [(ngModel)]="username" formControlName="username" class="customWidth" />
+                        <label htmlFor="username">Username</label>
+                    </span>
+                    <span class="p-float-label">
+                        <input pInputText id="email" [(ngModel)]="email" formControlName="email" class="customWidth" />
+                        <label htmlFor="email">Email</label>
+                    </span>
+                    <div class="passwordLabel">
+                        <span class="p-float-label">
+                            <p-password [(ngModel)]="password" [toggleMask]="true" formControlName="password"
+                                class="customWidth"></p-password>
+                            <label for="password">Password</label>
+                        </span>
+                        <div *ngIf="signUpForm.get('password').hasError('minlength')" class="error-message">Min 6 characters</div>
+                    </div>
+
+                    <span>
+                        <p-button label="Submit" styleClass="p-button-sm" [disabled]="!signUpForm.valid"
+                            [loading]="loading" (onClick)="login()"></p-button>
+                    </span>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+</div>

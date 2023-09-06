@@ -1,0 +1,52 @@
+.loginForm{
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:1.7rem;
+    padding:1.5rem;
+}
+.form-div{
+    box-shadow:rgba(0, 0, 0, 0.24) 0px 3px 8px;;
+    border-radius: 5px;
+}
+.customWidth{
+    width:230px !important
+}
+.main-div{
+    display: flex;
+    width:100vw;
+    justify-content: center;
+}
+form{
+    display: flex;
+}
+.image-div {
+    width: 200px; 
+    height: 320px; 
+    position: relative; 
+    padding:1rem;
+}
+
+.image-div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+.label-div{
+    display: flex;
+    flex-direction: column;
+}
+.minimumMessage{
+    color:grey
+}
+.passwordLabel{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.error-message{
+    color:red;
+    font-size: small;
+}

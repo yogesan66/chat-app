@@ -1,0 +1,12 @@
+<div class="side-panel">
+    <p-autoComplete [(ngModel)]="selectedValue" [suggestions]="filteredData" placeholder="Type to search" (completeMethod)="filterData($event)">
+    </p-autoComplete>
+    <div class="contact-list">
+     <div class="contacts" *ngFor="let contact of contactsWithBadge">
+      <p-badge [value]="contact.badge" ></p-badge>
+       <span class="contact-name">{{contact.name | titlecase}}</span>
+       
+     </div>
+  
+    </div>
+</div>

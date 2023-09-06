@@ -1,0 +1,14 @@
+<div class="navbar">
+    <div class="logo" [ngStyle]="{'margin-right': router.url.includes('/home') ? '91%' : '80%'}">
+        Chat App
+    </div>
+    <div class="nav-content">
+        <li>
+            <a routerLink="/login" routerLinkActive="active-link" *ngIf="!router.url.includes('/home')" >Log In</a>
+        </li>
+        <li>
+            <a routerLink="/signup" routerLinkActive="active-link"  *ngIf="!router.url.includes('/home')" >Sign Up</a> 
+        </li>
+    </div>
+`
+</div>
